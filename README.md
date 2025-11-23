@@ -1,40 +1,43 @@
-# 🚀 NetDevOps Repository
+# 🚀 NetDevOps
 
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Ansible](https://img.shields.io/badge/ansible-2.9+-red.svg)](https://www.ansible.com/)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Ansible](https://img.shields.io/badge/ansible-2.9%2B-red.svg)](https://www.ansible.com/)
 
-> A comprehensive collection of Network DevOps tools, scripts, and automation workflows for modern network infrastructure management.
+A curated collection of Network DevOps tools, playbooks, scripts, and automation workflows for managing modern network infrastructure.
 
 ---
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Directory Structure](#-directory-structure)
-- [Technologies](#-technologies)
-- [Getting Started](#-getting-started)
-- [Usage Examples](#-usage-examples)
-- [Resources](#-resources)
+- [Overview](#overview)
+- [Features](#features)
+- [Directory Structure](#directory-structure)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Usage Examples](#usage-examples)
+- [Resources](#resources)
+- [Project Status](#project-status)
+- [Author](#author)
 
 ---
 
 ## 🌟 Overview
 
-This repository serves as a centralized hub for all Network DevOps practices, tools, and automation scripts. Whether you're automating network configurations, managing infrastructure as code, or implementing CI/CD pipelines for network devices, you'll find valuable resources here.
+This repository is intended to be a central place for Network Automation and NetDevOps examples, reference playbooks, utilities, and documentation. The goal is to make it easier to automate configuration, backups, testing, and delivery of network infrastructure.
+
+Contributions, improvements, and real-world examples are welcome — see CONTRIBUTING.md (if present) or open an issue.
 
 ---
 
 ## ✨ Features
 
-- 🔧 **Network Automation** - Scripts and playbooks for automating network device configurations
-- 📦 **Infrastructure as Code** - Terraform and other IaC tools for network infrastructure
-- 🔄 **CI/CD Pipelines** - Automated testing and deployment workflows
-- 📊 **Monitoring & Observability** - Network monitoring and telemetry solutions
-- 🔐 **Security** - Network security automation and compliance checks
-- 📝 **Documentation** - Best practices and runbooks for network operations
-- 🧪 **Testing** - Network validation and testing frameworks
-- 🐳 **Containerization** - Docker and Kubernetes configurations for network tools
+- 🔧 Network automation playbooks and scripts (Ansible, Python)
+- 📦 Infrastructure-as-Code examples (Terraform)
+- 🔄 CI/CD pipeline definitions for testing and deployments
+- 📊 Monitoring and telemetry examples (Prometheus, exporters)
+- 🔐 Security and compliance checks
+- 🧪 Test frameworks and validation suites
+- 🐳 Docker and Kubernetes support for tooling
 
 ---
 
@@ -50,7 +53,7 @@ NetDevOps/
 ├── scripts/              # Utility scripts (bash, python, etc.)
 ├── configs/              # Configuration templates
 ├── docs/                 # Documentation and guides
-├── tests/                # Testing frameworks and test cases
+├── tests/                # Test suites and validation code
 └── tools/                # Custom tools and utilities
 ```
 
@@ -58,16 +61,14 @@ NetDevOps/
 
 ## 🛠️ Technologies
 
-This repository leverages various modern DevOps and networking technologies:
+This repository contains examples and code that use the following technologies:
 
-| Category | Technologies |
-|----------|-------------|
-| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnu-bash&logoColor=white) |
-| **Automation** | ![Ansible](https://img.shields.io/badge/Ansible-EE0000?logo=ansible&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white) |
-| **Containers** | ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white) |
-| **CI/CD** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white) ![GitLab CI](https://img.shields.io/badge/GitLab_CI-FCA121?logo=gitlab&logoColor=white) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white) |
-| **Version Control** | ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white) |
-| **Network Platforms** | Cisco IOS/XE/XR/NXOS |
+- Languages: Python, Go, Bash
+- Automation: Ansible, Terraform
+- Containers & Orchestration: Docker, Kubernetes
+- CI/CD: GitHub Actions (examples included)
+- Version control: Git / GitHub
+- Network platforms: Cisco IOS/XE/XR/NX-OS (examples)
 
 ---
 
@@ -75,100 +76,102 @@ This repository leverages various modern DevOps and networking technologies:
 
 ### Prerequisites
 
-Before using the tools and scripts in this repository, ensure you have the following installed:
+Before using code in this repository, install the toolchain appropriate for the area you're using:
 
-- **Python 3.8+** - [Download](https://www.python.org/downloads/)
-- **Ansible 2.9+** - Install via `pip install ansible`
-- **Git** - [Download](https://git-scm.com/downloads)
-- **Docker** - [Download](https://www.docker.com/get-started)
-- **Terraform** - [Download](https://www.terraform.io/downloads)
+- Python 3.8+
+- pip
+- Ansible 2.9+ (or newer)
+- Git
+- Docker (if using containerized tooling)
+- Terraform (for IaC examples)
 
-### Installation
+Note: Specific subfolders may require additional dependencies. Check each folder's README or requirements files.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/NetDevOps.git
-   cd NetDevOps
-   ```
+### Quick install
 
-2. **Set up Python virtual environment**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+1. Clone the repository
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/TitusM/NetDevOps.git
+cd NetDevOps
+```
 
-4. **Configure credentials** (as needed)
-   ```bash
-   cp .env.example .env
-   # Edit .env with your credentials
-   ```
+2. (Optional) Create a Python virtual environment and activate it
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install repository-wide dependencies (if present)
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Configure environment variables or credentials as needed
+
+```bash
+cp .env.example .env
+# Edit .env with appropriate credentials
+```
 
 ---
 
 ## 💡 Usage Examples
 
-### Example 1: Running an Ansible Playbook
+### Running an Ansible playbook
 
 ```bash
 ansible-playbook -i inventory.yml playbooks/configure_interfaces.yml
 ```
 
-### Example 2: Network Device Backup Script
+### Network device backup (example)
 
 ```bash
-python scripts/backup_configs.py --device-type cisco --output ./backups/
+python3 scripts/backup_configs.py --device-type cisco --output ./backups/
 ```
 
-### Example 3: Terraform Network Infrastructure
+### Terraform example (apply infrastructure)
 
 ```bash
 cd terraform/network-setup
-terraform init
-terraform plan
-terraform apply
+tf init
+tf plan
+tf apply
 ```
 
-### Example 4: Network Validation Tests
+### Run network validation tests
 
 ```bash
-pytest tests/network_validation/```
-
+pytest tests/network_validation/
+```
 
 ---
 
 ## 📚 Resources
 
-### Learning Materials
-- 📖 [Network Automation Best Practices](docs/best-practices.md)
-- 🎓 [Getting Started with NetDevOps](docs/getting-started.md)
-- 📺 [Video Tutorials](docs/tutorials.md)
-
-### Useful Links
-- [Cisco DevNet](https://developer.cisco.com/)
+- docs/best-practices.md - Network automation best practices
+- docs/getting-started.md - Intro and repo-specific guidance
+- docs/tutorials.md - Demos and walkthroughs
+- Cisco DevNet: https://developer.cisco.com/
 
 ---
 
 ## 📊 Project Status
 
-🚧 This project is actively maintained and continuously updated with new tools and best practices.
+This project is actively maintained. Expect updates, new examples, and improvements over time. If you find issues or want to contribute, please open an issue or a pull request.
 
 ---
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/TitusM)
-- LinkedIn: [Your Profile](https://linkedin.com/in/titus-majeza)
+**Titus M**
+- GitHub: [@TitusM](https://github.com/TitusM)
+- LinkedIn: https://linkedin.com/in/titus-majeza
 
 ---
 
-## 🌟 Show Your Support
+## ⭐ Support
 
-Give a ⭐️ if this project helped you!
-
----
+If this project helped you, give it a star on GitHub!
