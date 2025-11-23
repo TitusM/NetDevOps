@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Ansible](https://img.shields.io/badge/ansible-2.9%2B-red.svg)](https://www.ansible.com/)
+[![Author](https://img.shields.io/badge/author-TitusM-181717?logo=github&logoColor=white)](https://github.com/TitusM)
 
 A curated collection of Network DevOps tools, playbooks, scripts, and automation workflows for managing modern network infrastructure.
 
