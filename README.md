@@ -1,8 +1,9 @@
 # 🚀 NetDevOps
 
+[![Author](https://img.shields.io/badge/author-TitusM-181717?logo=github&logoColor=white)](https://github.com/TitusM)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Ansible](https://img.shields.io/badge/ansible-2.9%2B-red.svg)](https://www.ansible.com/)
-[![Author](https://img.shields.io/badge/author-TitusM-181717?logo=github&logoColor=white)](https://github.com/TitusM)
+
 
 A curated collection of Network DevOps tools, playbooks, scripts, and automation workflows for managing modern network infrastructure.
 
@@ -53,9 +54,8 @@ NetDevOps/
 ├── pipelines/            # CI/CD pipeline definitions
 ├── scripts/              # Utility scripts (bash, python, etc.)
 ├── configs/              # Configuration templates
-├── docs/                 # Documentation and guides
 ├── tests/                # Test suites and validation code
-└── tools/                # Custom tools and utilities
+
 ```
 
 ---
@@ -67,7 +67,7 @@ This repository contains examples and code that use the following technologies:
 - Languages: Python, Go, Bash
 - Automation: Ansible, Terraform
 - Containers & Orchestration: Docker, Kubernetes
-- CI/CD: GitHub Actions (examples included)
+- CI/CD: GitHub Actions/GitLab/Jenkins (examples included)
 - Version control: Git / GitHub
 - Network platforms: Cisco IOS/XE/XR/NX-OS (examples)
 
@@ -167,8 +167,8 @@ This project is actively maintained. Expect updates, new examples, and improveme
 
 ## 👤 Author
 
-**Titus M**
-- GitHub: [@TitusM](https://github.com/TitusM)
+**Titus M**  
+- GitHub: [@TitusM](https://github.com/TitusM)  
 - LinkedIn: https://linkedin.com/in/titus-majeza
 
 ---
