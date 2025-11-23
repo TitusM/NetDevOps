@@ -172,9 +172,3 @@ pytest tests/network_validation/```
 Give a ⭐️ if this project helped you!
 
 ---
-
-<div align="center">
-
-**Made with ❤️ for the Network DevOps Community**
-
-</div>
